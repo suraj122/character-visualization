@@ -1,13 +1,13 @@
-import React, { useEffect } from "react";
+import React from "react";
 import useAllCharacter from "../hooks/useAllCharacter";
 import CharacterCard from "./CharacterCard";
 import { Link } from "react-router-dom";
+import Shimmer from "./Shimmer";
 
 const AllCharacter = () => {
   const characters = useAllCharacter();
 
-  if (characters === null) return <h1>Loading...</h1>;
-  console.log(characters);
+  if (characters === null) return <Shimmer />;
   return (
     <section className="bg-gray-900 py-16">
       <div className="container mx-auto w-full px-16 ">

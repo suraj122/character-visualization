@@ -6,9 +6,11 @@ const CharacterCard = ({ character }) => {
   return (
     <article className="text-white flex bg-gray-800 shadow-xl rounded-lg">
       <img
-        className="max-h-[220px] object-cover rounded-bl-lg rounded-tl-lg"
+        className="max-h-[220px] object-cover rounded-bl-lg rounded-tl-lg bg-gray-800"
         src={image}
         alt={name}
+        width="220"
+        height="220"
       />
 
       <div className="px-4 py-3">
