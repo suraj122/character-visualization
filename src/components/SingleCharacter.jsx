@@ -1,12 +1,13 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import useSingleCharacter from "../hooks/useSingleCharacter";
+import SingleCharShimmer from "./SingleCharShimmer";
 
 const SingleCharacter = () => {
   const { id } = useParams();
   const character = useSingleCharacter(id);
 
-  if (character === null) return <h1>Loading...</h1>;
+  if (character === null) return <SingleCharShimmer />;
   const {
     name,
     image,
@@ -19,6 +20,7 @@ const SingleCharacter = () => {
     created,
   } = character;
   console.log(character);
+
   return (
     <main className="bg-gray-900 py-8 text-white">
       <header className="max-w-7xl mx-auto">
