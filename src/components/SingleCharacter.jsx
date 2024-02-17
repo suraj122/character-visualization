@@ -19,7 +19,6 @@ const SingleCharacter = () => {
     episode,
     created,
   } = character;
-  console.log(character);
 
   return (
     <main className="bg-gray-900 py-8 text-white">

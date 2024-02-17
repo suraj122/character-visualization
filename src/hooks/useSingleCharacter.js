@@ -9,9 +9,13 @@ const useSingleCharacter = (id) => {
   }, []);
 
   const fetchData = async () => {
-    const data = await fetch(API_URL + "/" + id);
-    const json = await data.json();
-    setSingleCharacter(json);
+    try {
+      const data = await fetch(API_URL + "/" + id);
+      const json = await data.json();
+      setSingleCharacter(json);
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return singleCharacter;

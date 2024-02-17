@@ -8,9 +8,13 @@ const useAllCharacter = (pageNum) => {
   }, [pageNum]);
 
   const fetchData = async () => {
-    const data = await fetch(API_URL + "/?page=" + pageNum);
-    const json = await data.json();
-    setAllCharacterData(json.results);
+    try {
+      const data = await fetch(API_URL + "/?page=" + pageNum);
+      const json = await data.json();
+      setAllCharacterData(json.results);
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return allCharacterData;

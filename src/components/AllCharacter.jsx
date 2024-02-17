@@ -10,9 +10,12 @@ const AllCharacter = () => {
   const characters = useAllCharacter(pageNum);
   const onlineStatus = useOnlineStatus();
 
+  // Check Next page and display the character
   const handleNext = () => {
     if (pageNum < 42) setPageNum(pageNum + 1);
   };
+
+  // Check Previous page and display the character
   const handlePrev = () => {
     if (pageNum > 1) setPageNum(pageNum - 1);
   };
