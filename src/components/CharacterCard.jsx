@@ -4,9 +4,9 @@ const CharacterCard = ({ character }) => {
   const { name, image, species, status, location, origin } = character;
 
   return (
-    <article className="text-white flex bg-gray-800 shadow-xl rounded-lg">
+    <article className="text-white xl:flex bg-gray-800 shadow-xl rounded-lg">
       <img
-        className="max-h-[220px] object-cover rounded-bl-lg rounded-tl-lg bg-gray-800"
+        className="max-h-[220px] w-full xl:w-auto object-cover rounded-tr-lg xl:rounded-tr-none xl:rounded-bl-lg rounded-tl-lg bg-gray-800"
         src={image}
         alt={name}
         width="220"

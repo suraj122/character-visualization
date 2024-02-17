@@ -23,13 +23,13 @@ const SingleCharacter = () => {
 
   return (
     <main className="bg-gray-900 py-8 text-white">
-      <header className="max-w-7xl mx-auto">
+      <header className="max-w-7xl mx-auto px-16">
         <Link to="/" className="bg-orange-600 font-semibold px-4 py-2 rounded">
           👈 See All Characters
         </Link>
       </header>
-      <section className="container mx-auto py-24">
-        <div className="max-w-7xl mx-auto w-full flex items-center justify-center gap-32">
+      <section className="container mx-auto py-24 px-16">
+        <div className="max-w-7xl mx-auto w-full xl:flex items-center justify-center gap-32">
           <header className="">
             <img
               width="300"
@@ -39,7 +39,7 @@ const SingleCharacter = () => {
               alt={name}
             />
           </header>
-          <article>
+          <article className="mt-8 xl:mt-0">
             <h1 className="text-4xl font-extrabold">{name}</h1>
             <div className="flex items-center mt-2">
               {status === "Alive" ? (

@@ -8,8 +8,8 @@ const SingleCharShimmer = () => {
           👈 See All Characters
         </Link>
       </header>
-      <section className="container mx-auto py-24">
-        <div className="max-w-7xl mx-auto w-full flex items-center justify-center gap-32">
+      <section className="container mx-auto py-24 px-16">
+        <div className="max-w-7xl mx-auto w-full xl:flex items-center justify-center gap-32">
           <header className="w-1/4">
             <div className="w-[300px] h-[300px] inline-block bg-gray-800" />
           </header>
