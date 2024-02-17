@@ -2,7 +2,7 @@
 
 **Character Visualization**
 
-- https://character-visualization.vercel.app/
+- https://character-visualization-eta.vercel.app/
 
 ### Description
 
