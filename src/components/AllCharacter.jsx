@@ -13,7 +13,7 @@ const AllCharacter = () => {
       <div className="container mx-auto w-full px-16 ">
         <div className="max-w-7xl mx-auto grid grid-cols-2 gap-16">
           {characters.map((character) => (
-            <Link to="/" key={character.id}>
+            <Link to={"/character/" + character.id} key={character.id}>
               <CharacterCard character={character} />
             </Link>
           ))}
