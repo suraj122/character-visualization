@@ -1,9 +1,16 @@
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Home from "./components/Home";
+
 function App() {
+  const appRouter = createBrowserRouter([
+    {
+      path: "/",
+      element: <Home />,
+    },
+  ]);
   return (
     <>
-      <h1 className="text-xl font-bold text-center">
-        Welcome to Character Visualization!
-      </h1>
+      <RouterProvider router={appRouter} />
     </>
   );
 }
